@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imgIcon{
+  width: 100%;
+  max-width: 35px;
+}
+
+#strength{
+  display: none;
+}
+
+
+#login{ 
+  display: block;
+}
+
+#mainRight{
+  display: none;
+}
+
+#credited{
+  display: none;
+}
+
+#credentialsZ{
+  display: none;
+}
+
+.white {
+  color: white;
+}
+
+#terms{
+  cursor: pointer;
+  color: blue;
+}
+
+#terms:hover{
+  color: orange;
+}
+
+
+
+@keyframes jump {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+#logMoving {
+  animation: sideStep 1s infinite alternate;
+}
+
+@keyframes sideStep {
+
+  0% {
+      transform: translateY(0);
+  }
+
+  25% {
+      transform: translateY(-20px);
+  }
+
+  50% {
+      transform: translateY(0);
+  }
+
+  75% {
+      transform: translateY(20px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
+
+
+#left div h3 {
+  color: orange;
+}
+
+#yeah a {
+  font-weight: 500;
+}
+
+.carousel {
+  width: 100%;
+  height: 35vw;
+  margin: 20px 0px;
+}
+
+.carousel h2{
+  color:orange;
+  font-weight: 900;
+}
+
+.carousel p{
+  color:orange;
+  font-weight: 900;
+}
+
+.carousel img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#yeah a:hover {
+  color: rgb(255, 255, 255);
+  animation: jump 0.5s infinite alternate;
+}
+
+
+body {
+  background: linear-gradient(black, black);
+}
+
+#left div {
+  color: #ffffff;
+  text-align: center;
+}
+
+#alex {
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  #left div h3 {
+      font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #left div h3 {
+      font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #left div h3 {
+      font-size: 15px;
+  }
+
+
+}
+
+.container mt-5 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  height: 100%;
+}
+
+.left-panel {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0044cc;
+  color: white;
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.right-panel {
+  background-color: white;
+  flex: 2;
+  padding: 50px;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border: none;
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: #f52727;
+  border: none;
+  width: 100%;
+}
+
+#jell {
+  display: none;
+}

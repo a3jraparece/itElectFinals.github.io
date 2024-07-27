@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidoe To be Played</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="videoForWorkouts.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row bg-body-tertiary">
+                <nav class="navbar navbar-expand-sm">
+                    <div class="container-lg">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logoFinal.png" alt="" class="imgIcon">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="team.html">About Us</a>
+                                </li>
+                                <select name="" style="border: none;" id="mySelect" onchange="handleSelectChange()">
+                                    <option value="" selected disabled>Redirect to Workouts</option>
+                                    <option value="1">Full Body Workouts</option>
+                                    <option value="2">Upper Body Workout</option>
+                                    <option value="3">Lower Body Workout</option>
+                                    <option value="4">Arm Workout</option>
+                                    <option value="5">Chest Workout</option>
+                                    <option value="6">Back Workout</option>
+                                    <option value="7">Abs Workout</option>
+                                    <option value="8">Leg Workout</option>
+                                    <option value="9">Forearm Workout</option>
+                                </select>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                <a href="login.html"><img src="images/logoutFinal.png" alt="" class="imgIcon"
+                                        style="margin-left: 20px;"></a>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <iframe src="https://www.youtube.com/embed/zDQLvuTHLZ8?si=vnQT7vzsJfYuXznY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="mainVideo">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-sm-8 ">
+                    <div class="row">
+                        <div class="col-5" id="imageVid">
+                            <img src="images/abs.jpg" alt="" id="imgSource">
+                        </div>
+                        <div class="col-7">
+                            <h4 id="titleVid">Title for the Video</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-6 p-2">
+                            <select name="" id="" style="width: 100%;" value>
+                                <option value="" disabled selected>Resolution</option>
+                                <option value="">auto</option>
+                                <option value="">240p</option>
+                                <option value="">360p</option>
+                                <option value="">480p</option>
+                                <option value="">720p</option>
+                                <option value="">1080p</option>
+                                <option value="">2160p</option>
+                                <option value="">3840p</option>
+                            </select>
+                        </div>
+                        <div class="col-6 p-2">
+                            <select name="" id="" style="width: 100%;" value>
+                                <option value="" disabled selected>Download</option>
+                                <option value="">240p - 36mb</option>
+                                <option value="">360p - 49mb</option>
+                                <option value="">480p - 69mb</option>
+                                <option value="">720p - 102mb</option>
+                                <option value="">1080p - 302mb</option>
+                                <option value="">2160p - 600mb</option>
+                                <option value="">3840p - 1.08gb</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid  bg-primary ">
+        <div class="row p-3 mt-4" style="color:white">
+            <div class="col-sm-6 " id="footerLeft">
+                Left Cttooooooo
+            </div>
+            <div class="col-sm-6 d-flex justify-content-end" id="footerRight">
+                Right Cttooooooo
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div style="text-align: center; background-color: black; color: white;" class="col-12">
+            <br><br>
+            @Gymazing x @NextWorkout
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <script src="videos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

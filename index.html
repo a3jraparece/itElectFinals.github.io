@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymazing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        img {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row bg-body-tertiary">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logoFinal.png" alt="" class="imgIcon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="team.html">About Us</a>
+                        </li>
+                        <select name="" style="border: none;" id="mySelect" onchange="handleSelectChange()">
+                            <option value="" selected disabled>Redirect to Workouts</option>
+                            <option value="1">Full Body Workouts</option>
+                            <option value="2">Upper Body Workout</option>
+                            <option value="3">Lower Body Workout</option>
+                            <option value="4">Arm Workout</option>
+                            <option value="5">Chest Workout</option>
+                            <option value="6">Back Workout</option>
+                            <option value="7">Abs Workout</option>
+                            <option value="8">Leg Workout</option>
+                            <option value="9">Forearm Workout</option>
+                        </select>
+                    </ul>
+                    <form style="display: flex;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <a href="login.html"><img src="images/logoutFinal.png" alt="" class="imgIcon"
+                                style="margin-left: 20px;"></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-lg">
+
+        <div class="row">
+            <div class="col-sm-3 " id="mainLeft">
+                <div class="recommended-videos">
+                    <br>
+                    <h5 style="color: white;">Most Watched Videos</h5>
+
+                    <div class="row" style="padding-top: 15px;">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/2frame.jpg" alt="" onclick="img1()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Full Body Workouts
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/upper4.jpg" alt="" onclick="img2()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Upper Body Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px;">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/7frame.jpg" alt="" onclick="img3()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Lower Body Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/arm5.jpg" alt="" onclick="img4()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Arm Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/chest5.jpg" alt="" onclick="img5()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Chest Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/back3.jpg" alt="" onclick="img6()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Back Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/abs2.jpg" alt="" onclick="img7()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Abs Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/7frame.jpg" alt="" onclick="img8()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Leg Workout
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 15px; ">
+                        <div class="col-lg-12">
+                            <img width="100%" src="images/fore2.jpg" alt="" onclick="img9()">
+                        </div>
+                        <div class="row " style="color: white;">
+                            <div class="col-12" style="padding-top: 5px; display: flex; align-items: center;">
+                                <h1 style="margin-right: 10px;">01</h1>
+                                Forearm Workout
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-9 " style="padding-top: 30px;">
+                <div class="row ">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active carousel">
+                                <img src="images/ba.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h2>It Support Specialist</h2>
+                                    <p style="margin-top: 20px;">We are looking for an IT Support Specialist to manage our computer systems and
+                                        provide technical support across the organization. Ideal candidates should have excellent
+                                        problem-solving skills and a strong technical background. Join us to help keep our IT operations
+                                        running smoothly!</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel">
+                                <img src="images/work5.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h2>Second slide label</h2>
+                                    <p style="margin-top: 20px;">Some representative placeholder content for the second slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel">
+                                <img src="images/igor.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h2>Third slide label</h2>
+                                    <p style="margin-top: 20px;">Some representative placeholder content for the third slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel">
+                                <img src="images/igor2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h2>Fourth slide label</h2>
+                                    <p style="margin-top: 20px;">Some representative placeholder content for the third slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel">
+                                <img src="images/igor3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h2>Fifth slide label</h2>
+                                    <p style="margin-top: 20px;">Some representative placeholder content for the third slide.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next" id="autoClickButton">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5
+                            style="background-color: rgb(214, 139, 33) ; text-align: center; color: rgb(255, 255, 255); padding: 5px; margin-top: 20px;">
+                            Workout Videos
+                        </h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/full body.jpg" alt="" id="full_body">
+                            <div class="overlay" onclick="selectWorkoutFullBody()">Full Body Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/upper body.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutUpperBody()">Uppper Body Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/lower body.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutLowerBody()">Lower Body Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/armLahi.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutArm()">Arm Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/chestLahi.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutChest()">Chest Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/back'.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutBack()">Back Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/abs.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutAbs()">Abs Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/leg.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutLeg()">Leg Workout</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="thumb">
+                            <img src="images/forearm.jpg" alt="">
+                            <div class="overlay" onclick="selectWorkoutForearms()">Forearm Workout</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div style="text-align: center; background-color: black; color: white;" class="col-12">
+                <br><br>
+                @Gymazing x @NextWorkout
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
